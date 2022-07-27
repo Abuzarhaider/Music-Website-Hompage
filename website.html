@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> SOLMUSIC </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="./images/icon.png">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+</head>
+
+<body>
+	<div class="display-menu">
+		<a class="display-option" href="#"> Home </a>
+		<a class="display-option" href="#"> Pages </a>
+		<a class="display-option" href="#"> About </a>
+		<a class="display-option" href="#"> Contact </a>
+		<a class="display-option" href="#"> Login </a>
+		<a class="display-option" href="#"> Sign In </a>
+		<a class="display-option" href="#"> Help </a>
+	</div>
+	<nav class="header-main-div">
+		<div class="header-logo-div">
+			<p> <span class="span"> SOL </span>MUSIC </p>
+		</div>
+
+		<div class="header-option-div">
+			<!-- can also use list to make navigation bar -->
+			<a class="header-option" href="#"> Home </a>
+			<a class="header-option" href="#"> About </a>
+			<a class="header-option" href="#"> Pages </a>
+			<a class="header-option" href="#"> Contact </a>
+
+		</div>
+
+		<div class="header-link-main-div">
+			<a class="header-link" href="#"> Help? </a>
+			<a class="header-link" href="#"> Login </a>
+			<a class="header-account-div" href="#"> Create an account </a>
+		</div>
+
+		<!-- menu bars -->
+		<div class="menu-bar menu-lines" onclick="displayMenu()">
+			<img src="./images/bars-solid.svg" alt="">
+		</div>
+		<div class="menu-bar cross" onclick="hideMenu()">
+			<img src="./images/xmark-solid.svg" alt="">
+		</div>
+	</nav>
+
+
+
+	<!-- main body section -->
+	<main>
+		<div class="body-text">
+			<h1> <span class="span">Listen</span> to<br> our music.</h1>
+			<p> Lorom ipsum dolor sit amet, consectetor adipiscing elit sed,<br>do eiusmod tempor incididont ut labore
+				et dolore magna<br>aliqua. Quis ipsum suspendiss ultrices gravida</p>
+			<div class="buttons">
+				<button class="btn1"> DOWNLOAD NOW </button>
+				<button class="btn2"> PREMIUM MUSIC </button>
+			</div>
+		</div>
+
+		<div class="image-div">
+			<img src="./images/music-logo.png">
+		</div>
+	</main>
+
+	<script>
+		function displayMenu() {
+			document.querySelector(".display-menu").style.display = "flex";
+			document.querySelector(".menu-lines").style.display = "none";
+			document.querySelector(".cross").style.display = "block";
+		}
+		function hideMenu() {
+			document.querySelector(".display-menu").style.display = "none";
+			document.querySelector(".menu-lines").style.display = "block";
+			document.querySelector(".cross").style.display = "none";
+		}
+	</script>
+</body>
+
+</html>
